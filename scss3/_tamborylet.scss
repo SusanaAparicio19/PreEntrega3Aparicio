@@ -1,0 +1,76 @@
+// VARIABLES DESKTOP
+
+//BORDES DESKTOP
+@mixin bordes($borde: outset, $radio: 10px)
+{
+    border: $borde;
+    border-radius: $radio;
+}
+@mixin bordes_secundarios ($bordesec: 1px outset, $radio: 10px)
+{
+    border: $bordesec;
+    border-radius: $radio;
+}
+
+//LETRAS DESKTOP
+$fuente-principal : 'Sans Serif','Times New Roman'; 
+
+//PARRAFOS DESKTOP
+@mixin parrafos ($ancho:500px, $alto: 95%, $padding: 100px, $margin: auto, $textalign: center, $fsize: 24px, $fstyle: italic)
+{
+    width: $ancho; 
+	height: $alto;
+	padding: $padding;
+    margin: $margin;
+	text-align: $textalign;
+    font-size: $fsize;
+	font-style: $fstyle;
+}
+
+@mixin parrafos_font ($fontf:'Freestyle Script',$fsize: 55px, $fstyle: italic)
+{
+    font-family: $fontf;
+    font-size: $fsize;
+	font-style: $fstyle;
+}
+
+//ETIQUETAS DESKTOP
+@mixin etiqueta_a ($decoration: none, $fweight: bold, $padding: 3px 3px 3px 3px)
+{
+    text-decoration: $decoration;
+	font-weight: $fweight;
+	padding: $padding;
+}
+
+
+//VARIABLES MEDIA QUERYS CELULAR
+
+//PARRAFOS MEDIA QUERYS CELULAR
+@mixin parrafos_mq_celu ($ancho: 80%, $alto: 50%, $textalign: justify, $marginl: 18px, $marginb: 25px, $fsize: 18px)
+{
+    width: $ancho; 
+	height: $alto;
+	text-align: $textalign;
+    margin-left: $marginl;
+    margin-bottom: $marginb;
+	font-size: $fsize;
+}
+@mixin parrafos_font_mq_celu ($fontf:'Freestyle Script',$fsize: 40px, $fstyle: italic)
+{
+    font-family: $fontf;
+    font-size: $fsize;
+	font-style: $fstyle;
+}
+
+//VARIABLES MEDIA QUERYS TABLET
+
+//PARRAFOS MEDIA QUERYS TABLET
+@mixin parrafos_mq_tab ($ancho: 80%, $alto: 40%, $textalign: justify, $marginl: 18px, $marginb: 25px, $fsize: 19px)
+{
+    width: $ancho; 
+	height: $alto;
+	text-align: $textalign;
+    margin-left: $marginl;
+    margin-bottom: $marginb;
+	font-size: $fsize;
+}

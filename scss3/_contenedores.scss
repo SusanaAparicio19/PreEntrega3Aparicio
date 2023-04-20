@@ -1,0 +1,94 @@
+//VARIABLES DESKTOP
+
+@mixin contenedor1 ($ancho:95%, $alto: 105%, $margen: auto, $displayf: flex)
+{
+    width: $ancho; 
+	height: $alto;
+	margin: $margen;
+	display: $displayf;
+}
+@mixin contenedor1B ($ancho:95%, $alto: 105%, $margen: auto)
+{
+    width: $ancho; 
+	height: $alto;
+	margin: $margen;
+}
+@mixin contenedor2 ($ancho:50%, $alto: 100%, $margen: auto, $gridgap: 2px)
+{
+    width: $ancho; 
+	height: $alto;
+	margin: $margen;
+	grid-gap: $gridgap;
+}	
+@mixin contenedor3 ($ancho:50%, $alto: 100%, $margen: auto, $gridgap: 2px, $aligni: center)
+{
+    width: $ancho; 
+	height: $alto;
+	margin: $margen;
+	grid-gap: $gridgap;
+    align-items: $aligni;
+}	
+
+//VARIABLES MEDIA QUERY CELULAR
+
+@mixin container_mq_celu ($marginr: 10px, $marginl: 10px)
+{
+	margin-right: $marginr;
+	margin-left: $marginl;
+}
+@mixin container_header_mq_celu ($width: 100%, $height: 21%, $margin: auto)
+{
+	width: $width;
+	height: $height;
+	margin: $margin;
+}
+@mixin container_imgheader_mq_celu ($width: 80%, $height: 100%, $margin: auto)
+{
+	width: $width;
+	height: $height;
+	margin: $margin;
+}
+@mixin cont1_mq_celu ($ancho:95%, $alto: 160%, $margen: auto, $displayb: block)
+{
+    width: $ancho; 
+	height: $alto;
+	margin: $margen;
+	display: $displayb;
+}
+@mixin cont2_mq_celu ($ancho: 100%, $alto: 50%, $margen: auto, $margint: 20px, $gap: 3px)
+{
+    width: $ancho; 
+	height: $alto;
+	margin: $margen;
+	margin-top: $margint;
+	gap: $gap;
+}
+@mixin cont3_mq_celu ($ancho: 100%, $alto: 50%, $margint: 40px, $margenl: -60)
+{
+    width: $ancho; 
+	height: $alto;
+	margin-top: $margint;
+	margin-left: $margenl;
+}
+//VARIABLES MEDIA QUERY TABLET
+
+@mixin container_imgheader_mq_tab ($width: 60%, $height: 100%, $margin: auto)
+{
+	width: $width;
+	height: $height;
+	margin: $margin;
+}
+@mixin cont1_mq_tab ($ancho:96%, $alto: 160%, $margen: auto, $displayb: block)
+{
+    width: $ancho; 
+	height: $alto;
+	margin: $margen;
+	display: $displayb;
+}
+@mixin cont3_mq_tab ($ancho: 100%, $alto: 50%, $margint: 80px, $margenl: -60)
+{
+    width: $ancho; 
+	height: $alto;
+	margin-top: $margint;
+	margin-left: $margenl;
+}

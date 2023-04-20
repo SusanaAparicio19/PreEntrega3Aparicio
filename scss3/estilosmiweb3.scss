@@ -1,0 +1,414 @@
+@import 'colores';
+@import 'tamborylet';
+@import 'contenedores';
+@import 'imagenes';
+
+body
+{
+    background-image: $color-body;
+    background-repeat: no-repeat;
+	background-size: cover;
+    
+}
+.container 
+{
+    header
+    {
+        width: 99%;
+	    height: 25%;
+        @include bordes; 
+        animation-name: arcoiris;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    
+        @keyframes arcoiris
+        {
+            0%, 100%
+            {
+                background-color: #6D05F9;
+            }
+
+            25%
+            {
+                background-color: #9D4EFB;
+            }
+
+            50%
+            {
+                background-color: #a883cc;
+            }
+
+            75%
+            {
+                background-color: #0AA280;
+            }
+        }
+
+    }
+    .imgheader
+    {
+        width: 32%;
+	    height: 100%;
+	    display: block;
+        margin: auto;
+        @include bordes
+    }
+}
+.Arriba
+{
+	width: 99%;
+	
+    nav
+    {
+        background-color: $color-nav;
+        width: 100%;
+        height: 30px;
+        font-family: $fuente-principal;
+        font-size: 20px;
+        @include bordes;
+    }	
+    ul
+    {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        
+    }
+    li
+    {
+        padding: 2px 10px 0 10px;
+        display: inline-block;
+        
+    }
+        
+    a
+    {
+        
+        @include etiqueta_a;
+        @include bordes_secundarios;
+
+        &:hover
+        {
+            color: $color-nav; 
+            background-color:#5E06C6;
+        }
+    }
+}
+*
+h1
+{
+	grid-area: h1;
+	font-family: $fuente-principal;
+	font-size: 35px;
+	font-style: italic;
+	padding-top: 20px;
+	text-align: center;
+}
+/*--------------------------------------- PAGINAS----------------------------------------*/
+.contenedor_inicio , .contenedor_susan , .contenedor_angie , .contenedor_irene
+{
+	background-image: $color-contenedores;
+	@include contenedor1;
+    @include bordes_secundarios
+}
+.contenedor_imagenes
+{
+	@include contenedor2;
+}
+.img1 , .imgface , .imgmariposa , .imgabstracto
+{
+	@include imagen_arriba;
+    @include bordes;
+}
+.img2 , .imglady , .imgarbol , .imgtriparbol
+{
+	@include imagen_medio;
+    @include bordes;
+}
+.img3 , .imgWyB , .imgarcoiris , .imgespacio
+{
+	@include imagen_abajo;
+    @include bordes;
+}
+.contenedor_parrafo , .contenedor_parrafo , .contenedor_parrafo , .contenedor_parrafo
+{
+	@include contenedor3;
+}
+.p_inicio , .p_susan , .p_angie , .p_irene
+{
+	@include parrafos;
+    font-family: fuente_principal;
+}
+b
+{
+	@include parrafos_font;
+    color: $color-parrafo;
+}
+footer
+{
+    background-image: $color-footer;
+    width: 95%;
+    margin: 20px 20px 20px 35px;
+    @include bordes_secundarios;
+
+}
+.redes
+{
+    width: 100%;
+    height: 12%;
+    text-align: right;
+    margin-bottom: 20px;
+   
+    h4 , p
+    {
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    ul
+    {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: inline-flex;
+    }
+    a
+    {
+        @include bordes_secundarios;
+        @include etiqueta_a;
+        
+        &:hover
+        {
+            color: $color-nav; 
+            background-color:#5E06C6;
+        }
+    }
+}
+
+/*--------------------------------------- CONTACTOS----------------------------------------*/
+.contenedor_contacto
+{
+    background-image: $color-contenedores;
+    @include contenedor1B;
+    @include bordes_secundarios;
+
+}
+.form
+{
+	width: 30%;
+	height: 100%;
+	margin: auto;
+	padding-top: 150px;
+}
+label
+{
+	display: block;
+	width: 200px;
+	height: 25px;
+	font-family: $fuente-principal;
+	font-size: 18px;
+}
+input 
+{
+	height: 30px;
+}
+
+/*------------------------------MEDIA QUERY CELULAR----------------------------------------*/
+@media only screen and (max-width: 576px)
+{
+    .container
+    {
+        @include container_mq_celu;
+    
+        .container header
+        {
+            @include container_header_mq_celu;
+        }
+        .imgheader
+        {
+            @include container_imgheader_mq_celu;
+        }
+    }	
+	.Arriba nav
+	{
+		width: 101%;
+		font-size: 15px;
+	
+        li
+        {
+            padding: 5px 5px 5px 5px;
+        }
+        h1
+        {
+            font-size: 25px;
+            padding-top: 5px;
+        } 
+    }
+    .contenedor_inicio, .contenedor_susan , .contenedor_angie , .contenedor_irene
+    {
+        @include cont1_mq_celu;
+    }
+    .contenedor_imagenes
+    {
+        @include cont2_mq_celu;
+    }
+    .img1, .imgface , .imgmariposa , .imgabstracto
+	{
+		margin: auto;
+	}
+	.img2, .imglady , .imgarbol , .imgtriparbol
+	{
+		margin: auto;
+	}
+	.img3, .imgWyB , .imgarcoiris , .imgespacio
+	{
+		margin: auto;
+	}
+    .contenedor_parrafo, .contenedor_parrafo , .contenedor_parrafo , .contenedor_parrafo
+	{
+        @include cont3_mq_celu;
+    }
+    .p_inicio, .p_susan , .p_angie , .p_irene
+    {
+        @include parrafos_mq_celu;
+    }
+    b
+	{
+		@include parrafos_font_mq_celu;
+        color: $color-parrafo;
+	}
+    footer
+	{
+		width: 91%;
+		height: 145px;
+		margin-left: 18px;
+	}
+	.redes
+	{
+		text-align: center;
+		padding-bottom: 10px;
+	}
+	h4
+	{
+		margin-right: 20px;
+		margin-bottom: 10px;
+	}
+    .contenedor_contacto
+	{
+		width: 95%;
+		height: 105%;
+	}
+	.form
+	{
+		width: 85%;
+		height: 50%;
+	}
+}
+
+/*-----------------------------------MEDIA QUERY TABLET--------------------------------*/
+@media only screen and (min-width: 577px) and (max-width: 991px)
+{
+    .container
+	{
+		@include container_mq_celu;
+	
+        .container header
+        {
+            @include container_header_mq_celu;
+        }
+        .imgheader
+        {
+            @include container_imgheader_mq_tab;
+        }
+    }
+    .Arriba	nav
+	{
+		width: 100%;
+		font-size: 18px;
+	
+        li
+        {
+            padding: 5px 5px 5px 5px;
+        }
+        h1
+        {
+            font-size: 25px;
+            padding-top: 5px;
+        }
+    }
+    .contenedor_inicio, .contenedor_susan , .contenedor_angie , .contenedor_irene
+    {
+        @include cont1_mq_tab;
+    }
+    .contenedor_imagenes
+    {
+        @include cont2_mq_celu;
+    }
+    .img1, .imgface , .imgmariposa , .imgabstracto
+	{
+		margin-left: 20px;
+	}
+	.img2, .imglady , .imgarbol , .imgtriparbol
+	{
+		margin-left: 140px;
+	}
+	.img3, .imgWyB , .imgarcoiris , .imgespacio
+	{
+		margin-left: 220px;
+	}
+    .contenedor_parrafo, .contenedor_parrafo , .contenedor_parrafo , .contenedor_parrafo
+	{
+        @include cont3_mq_tab;
+    }
+    .p_inicio, .p_susan , .p_angie , .p_irene
+    {
+        @include parrafos_mq_tab;
+    }
+    b
+	{
+		@include parrafos_font_mq_celu;
+        color: $color-parrafo;
+	}
+    footer
+	{
+		grid-area: footer;
+		width: 96%;
+		height: 145px;
+		margin-left: 6px;
+	}
+	.redes
+	{
+		text-align: center;
+		padding-bottom: 10px;
+	}
+	h4
+	{
+		margin-right: 20px;
+		margin-bottom: 10px;
+	}
+    .contenedor_contacto
+	{
+		width: 95%;
+		height: 105%;
+	}
+	.form
+	{
+		width: 55%;
+		height: 70%;
+	}
+}
+/*-----------------------------------MEDIA QUERY MONITOR--------------------------------*/
+@media only screen and (min-width: 992px) and (max-width: 1200px)
+{
+	.contenedor_inicio
+	{
+		height: 115%;
+	}
+	.p_inicio
+	{
+		width: 70%;
+		height: 95%;
+		padding: 40px;
+		font-size: 20px;
+	}    
+}

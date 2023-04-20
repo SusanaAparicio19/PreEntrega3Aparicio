@@ -1,0 +1,420 @@
+body {
+  background-image: linear-gradient(45deg, #6D05F9, #D3ACF9, #D8F9F2, #0AA280);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container header {
+  width: 99%;
+  height: 25%;
+  border: outset;
+  border-radius: 10px;
+  animation-name: arcoiris;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes arcoiris {
+  0%, 100% {
+    background-color: #6D05F9;
+  }
+  25% {
+    background-color: #9D4EFB;
+  }
+  50% {
+    background-color: #a883cc;
+  }
+  75% {
+    background-color: #0AA280;
+  }
+}
+.container .imgheader {
+  width: 32%;
+  height: 100%;
+  display: block;
+  margin: auto;
+  border: outset;
+  border-radius: 10px;
+}
+
+.Arriba {
+  width: 99%;
+}
+.Arriba nav {
+  background-color: #F1E0F9;
+  width: 100%;
+  height: 30px;
+  font-family: "Sans Serif", "Times New Roman";
+  font-size: 20px;
+  border: outset;
+  border-radius: 10px;
+}
+.Arriba ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.Arriba li {
+  padding: 2px 10px 0 10px;
+  display: inline-block;
+}
+.Arriba a {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 3px 3px 3px 3px;
+  border: 1px outset;
+  border-radius: 10px;
+}
+.Arriba a:hover {
+  color: #F1E0F9;
+  background-color: #5E06C6;
+}
+
+* h1 {
+  grid-area: h1;
+  font-family: "Sans Serif", "Times New Roman";
+  font-size: 35px;
+  font-style: italic;
+  padding-top: 20px;
+  text-align: center;
+}
+
+/*--------------------------------------- PAGINAS----------------------------------------*/
+.contenedor_inicio, .contenedor_susan, .contenedor_angie, .contenedor_irene {
+  background-image: linear-gradient(-90deg, #6D05F9, #D3ACF9, #D8F9F2, #0AA280);
+  width: 95%;
+  height: 105%;
+  margin: auto;
+  display: flex;
+  border: 1px outset;
+  border-radius: 10px;
+}
+
+.contenedor_imagenes {
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  grid-gap: 2px;
+}
+
+.img1, .imgface, .imgmariposa, .imgabstracto {
+  background-image: linear-gradient(45deg, #6D05F9, #D3ACF9, #D8F9F2, #0AA280);
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
+  border: outset;
+  border-radius: 10px;
+}
+
+.img2, .imglady, .imgarbol, .imgtriparbol {
+  background-image: linear-gradient(45deg, #6D05F9, #D3ACF9, #D8F9F2, #0AA280);
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 170px;
+  border: outset;
+  border-radius: 10px;
+}
+
+.img3, .imgWyB, .imgarcoiris, .imgespacio {
+  background-image: linear-gradient(45deg, #6D05F9, #D3ACF9, #D8F9F2, #0AA280);
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 320px;
+  border: outset;
+  border-radius: 10px;
+}
+
+.contenedor_parrafo, .contenedor_parrafo, .contenedor_parrafo, .contenedor_parrafo {
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  grid-gap: 2px;
+  align-items: center;
+}
+
+.p_inicio, .p_susan, .p_angie, .p_irene {
+  width: 500px;
+  height: 95%;
+  padding: 100px;
+  margin: auto;
+  text-align: center;
+  font-size: 24px;
+  font-style: italic;
+  font-family: fuente_principal;
+}
+
+b {
+  font-family: "Freestyle Script";
+  font-size: 55px;
+  font-style: italic;
+  color: #6D05F9;
+}
+
+footer {
+  background-image: linear-gradient(#6D05F9, #D3ACF9, #D8F9F2, #0AA280);
+  width: 95%;
+  margin: 20px 20px 20px 35px;
+  border: 1px outset;
+  border-radius: 10px;
+}
+
+.redes {
+  width: 100%;
+  height: 12%;
+  text-align: right;
+  margin-bottom: 20px;
+}
+.redes h4, .redes p {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.redes ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-flex;
+}
+.redes a {
+  border: 1px outset;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 3px 3px 3px 3px;
+}
+.redes a:hover {
+  color: #F1E0F9;
+  background-color: #5E06C6;
+}
+
+/*--------------------------------------- CONTACTOS----------------------------------------*/
+.contenedor_contacto {
+  background-image: linear-gradient(-90deg, #6D05F9, #D3ACF9, #D8F9F2, #0AA280);
+  width: 95%;
+  height: 105%;
+  margin: auto;
+  border: 1px outset;
+  border-radius: 10px;
+}
+
+.form {
+  width: 30%;
+  height: 100%;
+  margin: auto;
+  padding-top: 150px;
+}
+
+label {
+  display: block;
+  width: 200px;
+  height: 25px;
+  font-family: "Sans Serif", "Times New Roman";
+  font-size: 18px;
+}
+
+input {
+  height: 30px;
+}
+
+/*------------------------------MEDIA QUERY CELULAR----------------------------------------*/
+@media only screen and (max-width: 576px) {
+  .container {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .container .container header {
+    width: 100%;
+    height: 21%;
+    margin: auto;
+  }
+  .container .imgheader {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+  }
+  .Arriba nav {
+    width: 101%;
+    font-size: 15px;
+  }
+  .Arriba nav li {
+    padding: 5px 5px 5px 5px;
+  }
+  .Arriba nav h1 {
+    font-size: 25px;
+    padding-top: 5px;
+  }
+  .contenedor_inicio, .contenedor_susan, .contenedor_angie, .contenedor_irene {
+    width: 95%;
+    height: 160%;
+    margin: auto;
+    display: block;
+  }
+  .contenedor_imagenes {
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    margin-top: 20px;
+    gap: 3px;
+  }
+  .img1, .imgface, .imgmariposa, .imgabstracto {
+    margin: auto;
+  }
+  .img2, .imglady, .imgarbol, .imgtriparbol {
+    margin: auto;
+  }
+  .img3, .imgWyB, .imgarcoiris, .imgespacio {
+    margin: auto;
+  }
+  .contenedor_parrafo, .contenedor_parrafo, .contenedor_parrafo, .contenedor_parrafo {
+    width: 100%;
+    height: 50%;
+    margin-top: 40px;
+    margin-left: -60;
+  }
+  .p_inicio, .p_susan, .p_angie, .p_irene {
+    width: 80%;
+    height: 50%;
+    text-align: justify;
+    margin-left: 18px;
+    margin-bottom: 25px;
+    font-size: 18px;
+  }
+  b {
+    font-family: "Freestyle Script";
+    font-size: 40px;
+    font-style: italic;
+    color: #6D05F9;
+  }
+  footer {
+    width: 91%;
+    height: 145px;
+    margin-left: 18px;
+  }
+  .redes {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  h4 {
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  .contenedor_contacto {
+    width: 95%;
+    height: 105%;
+  }
+  .form {
+    width: 85%;
+    height: 50%;
+  }
+}
+/*-----------------------------------MEDIA QUERY TABLET--------------------------------*/
+@media only screen and (min-width: 577px) and (max-width: 991px) {
+  .container {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .container .container header {
+    width: 100%;
+    height: 21%;
+    margin: auto;
+  }
+  .container .imgheader {
+    width: 60%;
+    height: 100%;
+    margin: auto;
+  }
+  .Arriba nav {
+    width: 100%;
+    font-size: 18px;
+  }
+  .Arriba nav li {
+    padding: 5px 5px 5px 5px;
+  }
+  .Arriba nav h1 {
+    font-size: 25px;
+    padding-top: 5px;
+  }
+  .contenedor_inicio, .contenedor_susan, .contenedor_angie, .contenedor_irene {
+    width: 96%;
+    height: 160%;
+    margin: auto;
+    display: block;
+  }
+  .contenedor_imagenes {
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    margin-top: 20px;
+    gap: 3px;
+  }
+  .img1, .imgface, .imgmariposa, .imgabstracto {
+    margin-left: 20px;
+  }
+  .img2, .imglady, .imgarbol, .imgtriparbol {
+    margin-left: 140px;
+  }
+  .img3, .imgWyB, .imgarcoiris, .imgespacio {
+    margin-left: 220px;
+  }
+  .contenedor_parrafo, .contenedor_parrafo, .contenedor_parrafo, .contenedor_parrafo {
+    width: 100%;
+    height: 50%;
+    margin-top: 80px;
+    margin-left: -60;
+  }
+  .p_inicio, .p_susan, .p_angie, .p_irene {
+    width: 80%;
+    height: 40%;
+    text-align: justify;
+    margin-left: 18px;
+    margin-bottom: 25px;
+    font-size: 19px;
+  }
+  b {
+    font-family: "Freestyle Script";
+    font-size: 40px;
+    font-style: italic;
+    color: #6D05F9;
+  }
+  footer {
+    grid-area: footer;
+    width: 96%;
+    height: 145px;
+    margin-left: 6px;
+  }
+  .redes {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  h4 {
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  .contenedor_contacto {
+    width: 95%;
+    height: 105%;
+  }
+  .form {
+    width: 55%;
+    height: 70%;
+  }
+}
+/*-----------------------------------MEDIA QUERY MONITOR--------------------------------*/
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .contenedor_inicio {
+    height: 115%;
+  }
+  .p_inicio {
+    width: 70%;
+    height: 95%;
+    padding: 40px;
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=estilosmiweb3.css.map */

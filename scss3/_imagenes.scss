@@ -1,0 +1,30 @@
+//VARIABLES DESKTOP
+
+
+@mixin imagen_arriba ($color-backimg : linear-gradient(45deg,#6D05F9,#D3ACF9,#D8F9F2,#0AA280),$ancho:300px, $alto: 200px, $padding: 10px, $margint: 20px, $marginl:20px,)
+{
+    background-image: $color-backimg;
+    width: $ancho; 
+	height: $alto;
+	padding: $padding;
+    margin-top: $margint;
+	margin-left: $marginl;
+}
+@mixin imagen_medio ($color-backimg : linear-gradient(45deg,#6D05F9,#D3ACF9,#D8F9F2,#0AA280),$ancho:300px, $alto: 200px, $padding: 10px, $margint: 20px, $marginl:170px,)
+{
+    background-image: $color-backimg;
+    width: $ancho; 
+	height: $alto;
+	padding: $padding;
+    margin-top: $margint;
+	margin-left: $marginl;
+}
+@mixin imagen_abajo ($color-backimg : linear-gradient(45deg,#6D05F9,#D3ACF9,#D8F9F2,#0AA280),$ancho:300px, $alto: 200px, $padding: 10px, $margint: 20px, $marginl:320px,)
+{
+    background-image: $color-backimg;
+    width: $ancho; 
+	height: $alto;
+	padding: $padding;
+    margin-top: $margint;
+	margin-left: $marginl;
+}
