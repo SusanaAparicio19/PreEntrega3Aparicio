@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background-image: linear-gradient(45deg, #6D05F9, #D3ACF9, #D8F9F2, #0AA280);
   background-repeat: no-repeat;
@@ -203,10 +204,10 @@ footer {
 }
 
 .form {
-  width: 30%;
-  height: 100%;
+  width: 450px;
   margin: auto;
-  padding-top: 150px;
+  padding: 150px 20px;
+  box-sizing: border-box;
 }
 
 label {
@@ -217,12 +218,26 @@ label {
   font-size: 18px;
 }
 
-input {
-  height: 30px;
+input, textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
 }
 
-/*------------------------------MEDIA QUERY CELULAR----------------------------------------*/
-@media only screen and (max-width: 576px) {
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+#boton1 {
+  background-color: #0AA280;
+  width: 20%;
+}
+
+/*------------------------------MEDIA QUERY CELULAR vertical ----------------------------------------*/
+@media only screen and (min-width: 320px) and (max-width: 375px) {
   .container {
     margin-right: 10px;
     margin-left: 10px;
@@ -237,20 +252,20 @@ input {
     height: 100%;
     margin: auto;
   }
-  .Arriba nav {
-    width: 101%;
+  .container .Arriba nav {
     font-size: 15px;
+    height: 60px;
   }
-  .Arriba nav li {
+  .container .Arriba li {
     padding: 5px 5px 5px 5px;
   }
-  .Arriba nav h1 {
+  .container .Arriba h1 {
     font-size: 25px;
     padding-top: 5px;
   }
   .contenedor_inicio, .contenedor_susan, .contenedor_angie, .contenedor_irene {
-    width: 95%;
-    height: 160%;
+    width: 100%;
+    height: 180%;
     margin: auto;
     display: block;
   }
@@ -273,8 +288,8 @@ input {
   .contenedor_parrafo, .contenedor_parrafo, .contenedor_parrafo, .contenedor_parrafo {
     width: 100%;
     height: 50%;
-    margin-top: 40px;
-    margin-left: -60;
+    margin-top: 20px;
+    margin-left: -90;
   }
   .p_inicio, .p_susan, .p_angie, .p_irene {
     width: 80%;
@@ -291,9 +306,211 @@ input {
     color: #6D05F9;
   }
   footer {
-    width: 91%;
+    width: 95%;
     height: 145px;
+    margin-left: 10px;
+  }
+  .redes {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  h4 {
+    margin-right: 30px;
+    margin-bottom: 10px;
+  }
+  .contenedor_contacto {
+    width: 95%;
+    height: 105%;
+  }
+  .contenedor_contacto .form {
+    width: 100%;
+    height: 50%;
+    margin-left: -6px;
+  }
+  .contenedor_contacto label {
+    display: block;
+    width: 30px;
+    height: 25px;
+    font-family: "Sans Serif", "Times New Roman";
+    font-size: 18px;
+    size: 30px;
+  }
+}
+/*------------------------------MEDIA QUERY CELULAR horizontal----------------------------------------*/
+@media only screen and (min-width: 376px) and (max-width: 480px) {
+  .container {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .container .container header {
+    width: 100%;
+    height: 21%;
+    margin: auto;
+  }
+  .container .imgheader {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+  }
+  .container .Arriba nav {
+    font-size: 15px;
+    height: 50px;
+  }
+  .container .Arriba li {
+    padding: 5px 3px 5px 3px;
+  }
+  .container .Arriba h1 {
+    font-size: 25px;
+    padding-top: 5px;
+  }
+  .contenedor_inicio, .contenedor_susan, .contenedor_angie, .contenedor_irene {
+    width: 100%;
+    height: 180%;
+    margin: auto;
+    display: block;
+  }
+  .contenedor_imagenes {
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    margin-top: 20px;
+    gap: 3px;
+  }
+  .img1, .imgface, .imgmariposa, .imgabstracto {
+    margin: auto;
+  }
+  .img2, .imglady, .imgarbol, .imgtriparbol {
+    margin: auto;
+  }
+  .img3, .imgWyB, .imgarcoiris, .imgespacio {
+    margin: auto;
+  }
+  .contenedor_parrafo, .contenedor_parrafo, .contenedor_parrafo, .contenedor_parrafo {
+    width: 100%;
+    height: 50%;
+    margin-top: 20px;
+    margin-left: -90;
+  }
+  .p_inicio, .p_susan, .p_angie, .p_irene {
+    width: 80%;
+    height: 50%;
+    text-align: justify;
     margin-left: 18px;
+    margin-bottom: 25px;
+    font-size: 18px;
+  }
+  b {
+    font-family: "Freestyle Script";
+    font-size: 40px;
+    font-style: italic;
+    color: #6D05F9;
+  }
+  footer {
+    width: 95%;
+    height: 145px;
+    margin-left: 10px;
+  }
+  .redes {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  h4 {
+    margin-right: 30px;
+    margin-bottom: 10px;
+  }
+  .contenedor_contacto {
+    width: 95%;
+    height: 105%;
+  }
+  .contenedor_contacto .form {
+    width: 100%;
+    height: 50%;
+    margin-left: -6px;
+  }
+  .contenedor_contacto label {
+    display: block;
+    width: 30px;
+    height: 25px;
+    font-family: "Sans Serif", "Times New Roman";
+    font-size: 18px;
+    size: 30px;
+  }
+}
+/*-----------------------------------MEDIA QUERY TABLET pequeñas--------------------------------*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .container .container header {
+    width: 100%;
+    height: 21%;
+    margin: auto;
+  }
+  .container .imgheader {
+    width: 60%;
+    height: 100%;
+    margin: auto;
+  }
+  .container .Arriba nav {
+    width: 100%;
+    font-size: 18px;
+    height: 60px;
+  }
+  .container .Arriba li {
+    padding: 5px 5px 5px 5px;
+  }
+  .container .Arriba h1 {
+    font-size: 25px;
+    padding-top: 5px;
+  }
+  .contenedor_inicio, .contenedor_susan, .contenedor_angie, .contenedor_irene {
+    width: 96%;
+    height: 180%;
+    margin: auto;
+    display: block;
+  }
+  .contenedor_imagenes {
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    margin-top: 20px;
+    gap: 3px;
+  }
+  .img1, .imgface, .imgmariposa, .imgabstracto {
+    margin: auto;
+  }
+  .img2, .imglady, .imgarbol, .imgtriparbol {
+    margin: auto;
+  }
+  .img3, .imgWyB, .imgarcoiris, .imgespacio {
+    margin: auto;
+  }
+  .contenedor_parrafo, .contenedor_parrafo, .contenedor_parrafo, .contenedor_parrafo {
+    width: 100%;
+    height: 50%;
+    margin-top: 20px;
+    margin-left: -60;
+  }
+  .p_inicio, .p_susan, .p_angie, .p_irene {
+    width: 80%;
+    height: 40%;
+    text-align: justify;
+    margin-left: 18px;
+    margin-bottom: 25px;
+    font-size: 19px;
+  }
+  b {
+    font-family: "Freestyle Script";
+    font-size: 40px;
+    font-style: italic;
+    color: #6D05F9;
+  }
+  footer {
+    grid-area: footer;
+    width: 96%;
+    height: 145px;
+    margin-left: 6px;
   }
   .redes {
     text-align: center;
@@ -307,13 +524,22 @@ input {
     width: 95%;
     height: 105%;
   }
-  .form {
-    width: 85%;
+  .contenedor_contacto .form {
+    width: 100%;
     height: 50%;
+    margin-left: -6px;
+  }
+  .contenedor_contacto label {
+    display: block;
+    width: 30px;
+    height: 25px;
+    font-family: "Sans Serif", "Times New Roman";
+    font-size: 18px;
+    size: 30px;
   }
 }
-/*-----------------------------------MEDIA QUERY TABLET--------------------------------*/
-@media only screen and (min-width: 577px) and (max-width: 991px) {
+/*-----------------------------------MEDIA QUERY TABLET vertical--------------------------------*/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
   .container {
     margin-right: 10px;
     margin-left: 10px;
@@ -341,7 +567,7 @@ input {
   }
   .contenedor_inicio, .contenedor_susan, .contenedor_angie, .contenedor_irene {
     width: 96%;
-    height: 160%;
+    height: 180%;
     margin: auto;
     display: block;
   }
@@ -364,7 +590,7 @@ input {
   .contenedor_parrafo, .contenedor_parrafo, .contenedor_parrafo, .contenedor_parrafo {
     width: 100%;
     height: 50%;
-    margin-top: 80px;
+    margin-top: 20px;
     margin-left: -60;
   }
   .p_inicio, .p_susan, .p_angie, .p_irene {
@@ -405,11 +631,11 @@ input {
   }
 }
 /*-----------------------------------MEDIA QUERY MONITOR--------------------------------*/
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-  .contenedor_inicio {
+@media only screen and (min-width: 1025px) {
+  .contenedor_inicio, .contenedor_susan, .contenedor_angie, .contenedor_irene {
     height: 115%;
   }
-  .p_inicio {
+  .p_inicio, .p_susan, .p_angie, .p_irene {
     width: 70%;
     height: 95%;
     padding: 40px;

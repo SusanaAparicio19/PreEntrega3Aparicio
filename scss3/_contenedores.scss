@@ -48,7 +48,7 @@
 	height: $height;
 	margin: $margin;
 }
-@mixin cont1_mq_celu ($ancho:95%, $alto: 160%, $margen: auto, $displayb: block)
+@mixin cont1_mq_celu ($ancho:100%, $alto: 180%, $margen: auto, $displayb: block)
 {
     width: $ancho; 
 	height: $alto;
@@ -63,7 +63,7 @@
 	margin-top: $margint;
 	gap: $gap;
 }
-@mixin cont3_mq_celu ($ancho: 100%, $alto: 50%, $margint: 40px, $margenl: -60)
+@mixin cont3_mq_celu ($ancho: 100%, $alto: 50%, $margint: 20px, $margenl: -90)
 {
     width: $ancho; 
 	height: $alto;
@@ -78,14 +78,14 @@
 	height: $height;
 	margin: $margin;
 }
-@mixin cont1_mq_tab ($ancho:96%, $alto: 160%, $margen: auto, $displayb: block)
+@mixin cont1_mq_tab ($ancho:96%, $alto: 180%, $margen: auto, $displayb: block)
 {
     width: $ancho; 
 	height: $alto;
 	margin: $margen;
 	display: $displayb;
 }
-@mixin cont3_mq_tab ($ancho: 100%, $alto: 50%, $margint: 80px, $margenl: -60)
+@mixin cont3_mq_tab ($ancho: 100%, $alto: 50%, $margint: 20px, $margenl: -60)
 {
     width: $ancho; 
 	height: $alto;

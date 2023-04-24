@@ -8,7 +8,7 @@ body
     background-image: $color-body;
     background-repeat: no-repeat;
 	background-size: cover;
-    
+
 }
 .container 
 {
@@ -79,7 +79,7 @@ body
     {
         padding: 2px 10px 0 10px;
         display: inline-block;
-        
+    
     }
         
     a
@@ -195,10 +195,10 @@ footer
 }
 .form
 {
-	width: 30%;
-	height: 100%;
+	width: 450px;
 	margin: auto;
-	padding-top: 150px;
+	padding: 150px 20px;
+    box-sizing: border-box;
 }
 label
 {
@@ -208,41 +208,63 @@ label
 	font-family: $fuente-principal;
 	font-size: 18px;
 }
-input 
+input, textarea
 {
-	height: 30px;
+	width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+}
+textarea
+{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
 }
 
-/*------------------------------MEDIA QUERY CELULAR----------------------------------------*/
-@media only screen and (max-width: 576px)
+#boton1
+{
+    background-color:#0AA280;
+    width: 20%;
+    
+
+}
+/*------------------------------MEDIA QUERY CELULAR vertical ----------------------------------------*/
+@media only screen and (min-width: 320px) and (max-width: 375px)
 {
     .container
     {
+        
+        
         @include container_mq_celu;
-    
+        
         .container header
         {
-            @include container_header_mq_celu;
+        @include container_header_mq_celu;
         }
         .imgheader
         {
-            @include container_imgheader_mq_celu;
+        @include container_imgheader_mq_celu;
         }
-    }	
-	.Arriba nav
-	{
-		width: 101%;
-		font-size: 15px;
-	
-        li
+        
+        .Arriba
         {
-            padding: 5px 5px 5px 5px;
+            
+            nav
+            {
+                font-size: 15px;
+                height: 60px;
+            }
+            li
+            {
+                padding: 5px 5px 5px 5px;
+            }
+            h1
+            {
+                font-size: 25px;
+                padding-top: 5px;
+            } 
         }
-        h1
-        {
-            font-size: 25px;
-            padding-top: 5px;
-        } 
     }
     .contenedor_inicio, .contenedor_susan , .contenedor_angie , .contenedor_irene
     {
@@ -279,9 +301,225 @@ input
 	}
     footer
 	{
-		width: 91%;
+		width: 95%;
 		height: 145px;
-		margin-left: 18px;
+		margin-left: 10px;
+	}
+	.redes
+	{
+		text-align: center;
+		padding-bottom: 10px;
+	}
+	h4
+	{
+		margin-right: 30px;
+		margin-bottom: 10px;
+	}
+    .contenedor_contacto
+	{
+		width: 95%;
+		height: 105%;
+	
+        .form
+        {
+            width: 100%;
+            height: 50%;
+            margin-left: -6px;
+        }
+        label
+        {
+            display: block;
+            width: 30px;
+            height: 25px;
+            font-family: $fuente-principal;
+            font-size: 18px;
+            size: 30px;
+            
+        }
+    }
+}
+/*------------------------------MEDIA QUERY CELULAR horizontal----------------------------------------*/
+@media only screen and (min-width: 376px) and (max-width: 480px)
+{
+    .container
+    {
+                
+        @include container_mq_celu;
+        
+        .container header
+        {
+        @include container_header_mq_celu;
+        }
+        .imgheader
+        {
+        @include container_imgheader_mq_celu;
+        }
+        
+        .Arriba
+        {
+            
+            nav
+            {
+                font-size: 15px;
+                height: 50px;
+            }
+            li
+            {
+                padding: 5px 3px 5px 3px;
+            }
+            h1
+            {
+                font-size: 25px;
+                padding-top: 5px;
+            } 
+        }
+    }
+    .contenedor_inicio, .contenedor_susan , .contenedor_angie , .contenedor_irene
+    {
+        @include cont1_mq_celu;
+    }
+    .contenedor_imagenes
+    {
+        @include cont2_mq_celu;
+    }
+    .img1, .imgface , .imgmariposa , .imgabstracto
+	{
+		margin: auto;
+	}
+	.img2, .imglady , .imgarbol , .imgtriparbol
+	{
+		margin: auto;
+	}
+	.img3, .imgWyB , .imgarcoiris , .imgespacio
+	{
+		margin: auto;
+	}
+    .contenedor_parrafo, .contenedor_parrafo , .contenedor_parrafo , .contenedor_parrafo
+	{
+        @include cont3_mq_celu;
+    }
+    .p_inicio, .p_susan , .p_angie , .p_irene
+    {
+        @include parrafos_mq_celu;
+    }
+    b
+	{
+		@include parrafos_font_mq_celu;
+        color: $color-parrafo;
+	}
+    footer
+	{
+		width: 95%;
+		height: 145px;
+		margin-left: 10px;
+	}
+	.redes
+	{
+		text-align: center;
+		padding-bottom: 10px;
+	}
+	h4
+	{
+		margin-right: 30px;
+		margin-bottom: 10px;
+	}
+    .contenedor_contacto
+	{
+		width: 95%;
+		height: 105%;
+	
+        .form
+        {
+            width: 100%;
+            height: 50%;
+            margin-left: -6px;
+        }
+        label
+        {
+            display: block;
+            width: 30px;
+            height: 25px;
+            font-family: $fuente-principal;
+            font-size: 18px;
+            size: 30px;
+            
+        }
+    }
+}
+/*-----------------------------------MEDIA QUERY TABLET pequeñas--------------------------------*/
+@media only screen and (min-width: 481px) and (max-width: 768px)
+{
+    .container
+	{
+		@include container_mq_celu;
+	
+        .container header
+        {
+            @include container_header_mq_celu;
+        }
+        .imgheader
+        {
+            @include container_imgheader_mq_tab;
+        }
+    
+        .Arriba
+        {
+            nav
+            {
+                width: 100%;
+                font-size: 18px;
+                height: 60px;
+            }    
+            li
+            {
+                padding: 5px 5px 5px 5px;
+            }
+            h1
+            {
+                font-size: 25px;
+                padding-top: 5px;
+            }
+        }
+    }
+    .contenedor_inicio, .contenedor_susan , .contenedor_angie , .contenedor_irene
+    {
+        @include cont1_mq_tab;
+    }
+    .contenedor_imagenes
+    {
+        @include cont2_mq_celu;
+    }
+    .img1, .imgface , .imgmariposa , .imgabstracto
+	{
+		margin: auto;
+	}
+	.img2, .imglady , .imgarbol , .imgtriparbol
+	{
+		margin: auto;
+	}
+	.img3, .imgWyB , .imgarcoiris , .imgespacio
+	{
+		margin: auto;
+	}
+    .contenedor_parrafo, .contenedor_parrafo , .contenedor_parrafo , .contenedor_parrafo
+	{
+        @include cont3_mq_tab;
+    }
+    .p_inicio, .p_susan , .p_angie , .p_irene
+    {
+        @include parrafos_mq_tab;
+    }
+    b
+	{
+		@include parrafos_font_mq_celu;
+        color: $color-parrafo;
+	}
+    footer
+	{
+		grid-area: footer;
+		width: 96%;
+		height: 145px;
+		margin-left: 6px;
 	}
 	.redes
 	{
@@ -297,16 +535,27 @@ input
 	{
 		width: 95%;
 		height: 105%;
-	}
-	.form
-	{
-		width: 85%;
-		height: 50%;
-	}
+	
+        .form
+        {
+            width: 100%;
+            height: 50%;
+            margin-left: -6px;
+        }
+        label
+        {
+            display: block;
+            width: 30px;
+            height: 25px;
+            font-family: $fuente-principal;
+            font-size: 18px;
+            size: 30px;
+            
+        }
+    }
 }
-
-/*-----------------------------------MEDIA QUERY TABLET--------------------------------*/
-@media only screen and (min-width: 577px) and (max-width: 991px)
+/*-----------------------------------MEDIA QUERY TABLET vertical--------------------------------*/
+@media only screen and (min-width: 769px) and (max-width: 1024px)
 {
     .container
 	{
@@ -398,13 +647,13 @@ input
 	}
 }
 /*-----------------------------------MEDIA QUERY MONITOR--------------------------------*/
-@media only screen and (min-width: 992px) and (max-width: 1200px)
+@media only screen and (min-width: 1025px)
 {
-	.contenedor_inicio
+	.contenedor_inicio, .contenedor_susan , .contenedor_angie , .contenedor_irene
 	{
 		height: 115%;
 	}
-	.p_inicio
+	.p_inicio, .p_susan , .p_angie , .p_irene
 	{
 		width: 70%;
 		height: 95%;
